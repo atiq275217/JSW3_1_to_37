@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS W3 Practice</title>
+	<link rel="stylesheet" href="/Atiq/JSW3/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="slideShow">
+	     <img src="/Atiq/JSW3/img/slideShow.gif">
+	    </div>
+		<p id="demo_001"></p>
+		<h1>JS W3 School Practice</h1>
+	<br/>
+	<h1>Using innerHTML</h1>
+	<p>To access an HTML element, JavaScript can use the <strong>document.getElementById(id)</strong> document.getElementById(id) method.<br/>The id attribute defines the HTML element. The <strong>innerHTML</strong>  property defines the HTML content:</p>
+	<p id="inner_HTML"></p>
+
+	<h1>Using document.write()</h1>
+	<p>For testing purposes, it is convenient to use <strong>document.write()</strong> </p>
+
+	<p>Never call document.write after the document has finished loading.It will overwrite the whole document.</p>
+	<script type="text/javascript">
+		document.write(10+5);
+	</script>
+
+	<h1>delete all existing HTML</h1>
+	<p>Using document.write() after an HTML document is loaded, will delete all existing HTML:
+	</p>
+	<button type="button" onclick="document.write('Please Reload The page')">Click Here And Exist All</button>
+
+	<h1>Using window.alert()</h1>
+	<p>You can use an alert box to display data</p>
+	<h3>You Want to check window alert than finish comment area</h3>
+	<!--
+	<script>
+		window.alert("Please Cleck Here Ok And See All Document");
+	</script>
+	-->
+
+	<h1>Using console.log()</h1>
+	<p>You will learn more about debugging in a later chapter.</p>
+	<h2>Activate debugging with F12 Or check Inspect and see console result</h2>
+	<p>Select "Console" in the debugger menu. Then click Run again.</p>
+	<script type="text/javascript">
+		console.log(16+6);
+	</script>
+
+	<br/>
+	<h1>p-1</h1>
+
+	<p id="demo_1"></p>
+
+	<h1>p-2</h1>
+
+	<p id="demo_2">A Paragraph</p>
+	<button type="button" onclick="myFunction_2()">Click Here</button>
+
+
+	<h1>p-3</h1>
+	<h2>JavaScript Statements</h2>
+	<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+	<p id="demo_3"></p>
+
+	<p id="demo_3_1"></p>
+
+	<p>Multiple statements on one line is allowed.</p>
+	<p id="demo_3_2"></p>
+	<br/>
+
+	<p>JavaScript code blocks are written between { and }</p>
+	<button type="button" onclick="myFunction_3()">Click Here</button>
+	<p id="demo_3_3"></p>
+	<p id="demo_3_4"></p>
+
+	<h1>P-4</h1>
+	<h2>JavaScript Syntax</h2>
+	<br>
+	<h3>JavaScript Numbers</h3>
+	<p>Number can be written with or without decimals.</p>
+	<p id="demo_4"></p>
+
+
+	<h2>JavaScript Strings</h2>
+	<p>Strings can be written with double or single quotes.</p>
+	<p id="demo_4_1"></p>
+	<p id="demo_4_2"></p>
+
+	<h2>JavaScript Strings</h2>
+	<p>Strings can be written with double or single quotes.</p>
+	<p id="demo_4_3"></p>
+	<p id="demo_4_4"></p>
+
+
+	<h2>JavaScript Variables</h2>
+	<p>In a programming language, <b>variables</b> are used to <b>store</b> data values.
+	JavaScript uses the <b>var</b> keyword to <b>declare</b> variables.
+	An <b>equal sign</b> is used to <b>assign</b> values to variables.</p>
+	<p>In this example, x is defined as a variable.
+	Then, x is assigned the value of 6:</p>
+	<p id="demo_4_5"></p>
+
+	<h2>JavaScript Operators</h2>
+	<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+	<p id="demo_4_6"></p>
+	<p>All Operators</p>
+	<p id="demo_4_7"></p>
+	<p id="demo_4_8"></p>
+	<p id="demo_4_9"></p>
+	<p id="demo_4_10"></p>
+
+
+	<h2>Assigning JavaScript Values</h2>
+	<p>In JavaScript the = operator is used to assign values to variables.</p>
+	<p id="demo_4_11"></p>
+
+	<h2>JavaScript and Camel Case</h2>
+	<p>Hyphens are not allowed in JavaScript. They are reserved for subtractions.</p>
+	<p id="demo_4_12"></p>
+
+	<h2>Underscore:</h2>
+	<p id="demo_4_13"></p>
+
+	<h2>Upper Camel Case (Pascal Case):</h2>
+	<p id="demo_4_14"></p>
+
+	<h2>Lower Camel Case:</h2>
+	<p>JavaScript programmers tend to use camel case that starts with a lowercase letter:</p>
+	<p id="demo_4_15"></p>
+
+	<h1>P-5</h1>
+	<h2>JavaScript Variables</h2>
+	<p>In this example, x, y, and z are variables.</p>
+
+	<p>
+	var x = 9; <br>
+	var y = 7; <br>
+
+	var z = x+y;</p>
+	<p id="demo_5"></p>
+
+	<h2>Much Like Algebra</h2>
+	<p>In this example, price1, price2, and total, are variables:</p>
+	<p id="demo_5_1"></p>
+
+	<h2>JavaScript Data Types</h2>
+	<p>Strings are written with quotes.</p>
+	<p>Numbers are written without quotes.</p>
+	<p id="demo_5_2"></p>
+
+	<h2>One Statement, Many Variables</h2>
+	<p>You can declare many variables in one statement.
+	<br>
+	Start the statement with var and separate the variables by comma:</p>
+	<p id="demo_5_3"></p>
+
+	<p>A declaration can span multiple lines:</p>
+	<p id="demo_5_4"></p>
+
+	<h2>JavaScript Arithmetic</h2>
+	<p>As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:<br>The result of adding 5 + 5 + 4:</p>
+	<p id="demo_5_5"></p>
+
+	<p>The result of adding "John" + " " + "Doe":</p>
+	<p id="demo_5_6"></p>
+
+	<p>The result of adding "5" + 2 + 3:</p>
+	<p id="demo_5_7"></p>
+
+	<h4>But</h4>
+	<p>The result of adding 2 + 3 + "5":</p>
+	<p id="demo_5_8"></p>
+
+	<h1>P-6</h1>
+	<h2>JavaScript Operators</h2>
+
+	<img src="/Atiq/JSW3/img/arithmetic_operators.JPG" alt="operator">
+	<br/>
+	<br/>
+	<img src="/Atiq/JSW3/img/assignment_operators.JPG" alt="operator">
+
+
+	<h2>The += Operator</h2>
+	<p>Assignment</p>
+	<p id="demo_6"></p>
+
+	<p>The assignment operator += can concatenate strings.</p>
+	<p id="demo_6_1"></p>
+
+	<h2>Adding Strings and Numbers</h2>
+	<p>Adding two numbers, will return the sum, but adding a number and a string will return a string:</p>
+	<p>Adding a number and a string, returns a string.</p>
+	<p id="demo_6_2"></p>
+	<br>
+
+	<img src="/Atiq/JSW3/img/comparison_operators.JPG" alt="operator"><br>
+	<img src="/Atiq/JSW3/img/logical_operators.JPG" alt="operator"><br>
+	<img src="/Atiq/JSW3/img/type_operators.JPG" alt="operator"><br>
+	<img src="/Atiq/JSW3/img/bitwise_perators.JPG" alt="operator"><br>
+
+<!--P-7 (JavaScript Arithmetic) -->
+<h1>P-7</h1>
+<h2>JavaScript Arithmetic</h2>
+<h3>Adding</h3>
+<p>The addition operator (+) adds numbers:</p>
+<p id="demo_7"></p>
+
+<h3>Subtracting</h3>
+<p>The subtraction operator (-) subtracts numbers.</p>
+<p id="demo_7_1"></p>
+
+<h3>Multiplying</h3>
+<p id="demo_7_2"></p>
+
+<h3>Dividing</h3>
+<p id="demo_7_3"></p>
+
+<h3>Remainder</h3>
+<p>The modulus operator (%) 30%4 returns the division remainder.</p>
+<p id="demo_7_4"></p>
+
+<h3>Incrementing</h3>
+<p id="deom_7_5"></p>
+
+<h3>Decrement</h3>
+<p id="demo_7_6"></p>
+
+<h3>Exponentiation</h3>
+<p>The exponentiation operator (**) raises the first operand to the power of the second operand.</p>
+<p id="demo_7_7"></p>
+
+<h4>Math.pow</h4>
+<p>x ** y produces the same result as Math.pow(x,y):</p>
+<p id="demo_7_8"></p>
+
+<h2>Operator Precedence</h2>
+<p>Operator precedence describes the order in which operations are performed in an arithmetic expression</p>
+<p id="demo_7_9"></p>
+<p id="demo_7_10"></p>
+
+<h2>JavaScript Operator Precedence Values</h2>
+<img src="/Atiq/JSW3/img/op_values_1.JPG" alt="Operator">
+<h3>Operator Precedence Values</h3>
+<img src="/Atiq/JSW3/img/op_values_2.JPG" alt="Operator">
+<h3>Operator Precedence Values</h3>
+<img src="/Atiq/JSW3/img/op_values_3.JPG" alt="Operator">
+<h3>Operator Precedence Values</h3>
+<img src="/Atiq/JSW3/img/op_values_4.JPG" alt="Operator">
+<h3>Operator Precedence Values</h3>
+<img src="/Atiq/JSW3/img/op_values_5.JPG" alt="Operator">
+
+<!-- End P -7-->
+<!-- Start P-8-->
+<h1>P-8</h1>
+<h2>JavaScript Assignment</h2>
+<img src="/Atiq/JSW3/img/js_A_O.JPG" alt="Assignment Operator">
+
+<h2>The += Operator</h2>
+<p id="demo_8"></p>
+	
+<h2>The - = Operator</h2>
+<p id="demo_8_1"></p>
+
+<h2>The *= Operator</h2>
+<p id="demo_8_2"></p>
+
+<h2>The /= Operator</h2>
+<p id="demo_8_3"></p>
+
+<h2>The %= Operator</h2>
+<p id="demo_8_4"></p>
+<!--End -->
+
+<h1>P-9</h1>
+<h2>JavaScript Data Types</h2>
+<p>JavaScript variables can hold many data types: numbers, strings, objects and more:</p>
+<p id="demo_9"></p>
+
+<h2>The Concept of Data Types</h2>
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+<p id="demo_9_1"></p>
+
+<h2>But</h2>
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+<p id="demo_9_2"></p>
+
+<h2>Other number system</h2>
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+<p id="demo_9_3"></p>
+
+<h2>JavaScript Booleans</h2>
+<p>Booleans can only have two values: true or false.</p>
+<p>
+	var x = 10; <br>
+	var y = 8; <br>
+	var z = 10;
+</p>
+<p>(x == z) = true And (x == y) = false;</p>
+<p id="demo_9_4"></p>
+
+<h2>JavaScript Arrays</h2>
+<P>JavaScript arrays are written with square brackets.[ ]</P>
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+<p>var heIs = ["Atiq","Shehab","Sanaul"];</p>
+<p>first item is [0]</p>
+<p id="demo_9_5"></p>
+<p>second ietm is [1]</p>
+<p id="demo_9_6"></p>
+<p>Third ietm is [2]</p>
+<p id="demo_9_7"></p>
+
+<h2>JavaScript Objects</h2>
+<p>JavaScript objects are written with curly braces {}.
+<br>
+Object properties are written as name:value pairs, separated by commas.</p>
+<p id="demo_9_8"></p>
+
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+<p id="demo_9_9"></p>
+<p id="demo_9_10"></p>
+
+<h2>Null</h2>
+<h3>Difference Between Undefined and Null</h3>
+<p>Undefined and null are equal in value but different in type:</p>
+<p id="demo_9_11"></p>
+<p>Or</p>
+<p id="demo_9_12"></p>
+<!--End Data Types-->
+
+<!-- Start JavaScript Functions-->
+<h1>P-10</h1>
+<h2>JavaScript Functions</h2>
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+<p id="demo_10"></p>
+
+<h2>return value</h2>
+<p>This example calls a function which performs a calculation and returns the result:</p>
+<p id="demo_10_1"></p>
+
+<<h2>Fahrenheit to Celsius</h2>
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo_10_2"></p>
+<p>Or</p>
+<p id="demo_10_3"></p>
+
+<h1>P-11</h1>
+<h2>JavaScript Objects</h2>
+<p>Objects are variables too. But objects can contain many values.<br>This code assigns many values (Fiat, 500, white) to a variable named car:</p>
+<p id="demo_11"></p>
+<p id="demo_11_1"></p>
+<p id="demo_1_2"></p>
+
+<h2>Object Item</h2>
+<p>
+	var perSon = { <br>
+	firstName: "Masum", <br>
+	lastName : "Billah", <br>
+	age : 25, <br>
+	eyeColor : "Black & White"<br>
+} <br>
+Result is
+</p>
+<p id="demo_11_4"></p>
+<p>Or</p>
+<p id="demo_11_5"></p>
+
+<h2>Accessing Object Methods</h2>
+<p>An object method is a function definition, stored as a property value.</p>
+<p>If you access an object method without (), it will return the function definition:</p>
+<p id="demo_11_6"></p>
+
+<h1>P-12</h1>
+<p>JavaScript Events</p>
+<p id="demo_12"></p>
+<button onclick="document.getElementById('demo_12').innerHTML = Date()">Click and see the time</button>
+
+<h2>This. operator</h2>
+<button onclick="this.innerHTML=Date()">Hey Click me</button>
+
+<h2>Display Date</h2>
+<p>Click the button to display the date</p>
+<button onclick="displayDate()">Click Here</button>
+<p id="demo_12_1"></p>
+
+<img src="/Atiq/JSW3/img/commonHtmlEvent.JPG" alt="Events">
+
+<!--End JS Events -->
+
+<!--Start JS String-->
+<h1>P-13</h1>
+<h2>JavaScript Strings</h2>
+<h3>String Length</h3>
+<p>The length property returns the length of a string:</p>
+<p id="demo_13"></p>
+
+<h2>Escape Character</h2>
+<p>The escape sequence \" inserts a double quote in a string.</p>
+<p id="demo_13_1"></p>
+
+<p>Or</p>
+<p>The escape sequence \\ inserts a backslash in a string.</p>
+<p id="demo_13_2"></p>
+
+<!--String Methods-->
+<h1>P-14</h1>
+<h2>JavaScript String Methods</h2>
+<h2>Finding a String in a String</h2>
+<h3>IndexOf()</h3>
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+<p id="demo_14"></p>
+
+<h3>lastIndexOf()</h3>
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+<p>"Please locate where 'locate' occurs!"</p>
+<p id="demo_14_1"></p>
+
+<p>And</p>
+<p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+<p id="demo_14_2"></p>
+
+<h2>Slice = Copy, Cut, Paste</h2>
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+<p id="demo_14_3"></p>
+
+<p id="demo_slice_14_4"></p>
+
+<p id="demo_slice_14_5"></p>
+
+<p id="demo_slice_14_6"></p>
+
+<p id="demo_slice_14_7"></p>
+
+<p id="demo_slice_14_8"></p>
+
+<h2>Substr</h2>
+<p id="demo_substr_14_9"></p>
+
+<p id="demo_substr_14_10"></p>
+
+<h1>Replacing String Content</h1>
+<p>Replace "Atiqur Rahman" with "Masum Billah" in the paragraph below:</p>
+<button onclick="amakeReplaceKoro()">Please Click Me and See the Replace</button>
+<p id="demo_replace_14_11">My name is Atiqur Rahman.</p>
+
+<p>Or</p>
+
+<p>By default, the replace() method replaces only the first match:</p>
+<button onclick="amakeReplaceKoro_2()">See the change</button>
+<p id="demo_replace_14_12">My name is Atiqur Rahman PK And Masum Bilah PK.</p>
+
+<h2>Case Insensitive</h2>
+<p>To replace case insensitive, use a regular expression with an /i flag (insensitive):</p>
+<button onclick="amakeReplaceKoro_3()">See the change</button>
+<p id="demo_replace_14_13">My name is Atiqur Rahman.</p>
+
+<h2>Regular Expression</h2>
+<p>To replace all matches, use a regular expression with a /g flag (global match):</p>
+<button onclick="amakeReplaceKoro_4()">See the change</button>
+<p id="demo_replace_14_14">My name is Atiqur Rahman and Atiqur Rahman.</p>
+
+<h2>Converting to Upper and Lower Case</h2>
+<p>A string is converted to upper case with toUpperCase():</p>
+<h3>Convert string to upper case:</h3>
+<button onclick="amakeReplaceKoro_5()">See the Change</button>
+<p id="demo_replace_14_15">my name is atiqur rahman pk</p>
+
+<h3>Convert string to Lower Case</h3>
+<p>A string is converted to lower case with toLowerCase():</p>
+<button onclick="amakeReplaceKoro_6()">See the Change</button>
+<p id="demo_replace_14_16">MY NAME IS ATIQUR RAHMAN PK</p>
+
+<h2>JS String Methods = The concat() Method</h2>
+<p>concat() joins two or more strings:</p>
+<p id="demo_concat_14_17"></p>
+
+<h2>The charAt() Method</h2>
+<p>The charAt() method returns the character at a given position in a string:</p>
+<p id="demo_charAt_14_18"></p>
+
+<h2>Converting a String to an Array</h2>
+<p>Click "Click Koros na kare" to display the first array element, after a string split.</p>
+<button onclick="cstoArry()">Click Koros na kare</button>
+<p id="demo_split_14_19"></p>
+
+<p id="demo_split_14_20"></p>
+
+<!-======Start=====JavaScript Numbers=============-->
+
+<h1>P-15</h1>
+<h2>JavaScript Numbers</h2>
+<p>The Number() method converts variables to numbers:</p>
+<p id="numBer_15"></p>
+
+<h2>The parseInt() Method</h2>
+<p>parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:</p>
+<p id="numBer_15_1"></p>
+
+<h2>The parseFloat() Method</h2>
+<p>parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:</p>
+<p id="numBer_15_2"></p>
+
+<!--= Start===JavaScript Arrays===========-->
+<h1>P-16</h1>
+<h2>JavaScript Arrays</h2>
+<p>JavaScript arrays are used to store multiple values in a single variable.</p>
+<p id="array_16"></p>
+<p id="array_16_1"></p>
+
+<h2>Using the JavaScript Keyword new Array()</h2>
+<p>The following example also creates an Array, and assigns values to it:</p>
+<p id="array_16_2"></p>
+<p><p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p></p>
+<p id="array_16_3"></p>
+
+<h2>Changing an Array Element</h2>
+<p>JavaScript array elements are accpessed using numeric indexes (starting from 0).</p>
+<p id="array_16_4"></p>
+
+<h2>Arrays are Objects</h2>
+<p id="array_16_5"></p>
+
+<h2>The length Property</h2>
+<p>The length property returns the length of an array.</p>
+<p>The length property of an array returns the length of an array (the number of array elements).</p>
+<p id="array_16_6"></p>
+
+<p id="array_16_7"></p>
+
+<h2>Accessing the Last Array Element</h2>
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+<p id="array_16_8"></p>
+
+<h2>Looping Array Elements</h2>
+<p>The safest way to loop through an array, is using a for loop:</p>
+<p>The best way to loop through an array is using a standard for loop:</p>
+<p id="array_loop_16_9"></p>
+<p id="array_loop_16_10"></p>
+<p id="array_loop_16_11"></p>
+
+<h2>Array.forEach()</h2>
+<p>You can also use the Array.forEach() function:</p>
+<p>Array.forEach() calls a function for each array element.</p>
+<p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p>
+<p id="array_forEach_16_12"></p>
+
+<h2>Adding Array Elements</h2>
+<p>The easiest way to add a new element to an array is using the push() method:</p>
+<p>The push method appends a new element to an array.</p>
+<button onclick="addFunction()">Click Me</button>
+<p id="array_adding_16_13"></p>
+
+<h2>Array length property:</h2>
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+<button onclick="lenPrty()">Hey Click Me</button>
+<p id="array_adding_16_14"></p>
+
+<p>And</p>
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+<p id="array_adding_16_15"></p>
+
+<h2>Associative Arrays</h2>
+<p id="associative_16_16"></p>
+
+<!---===JS Array Methods================--->
+<h1>P-17</h1>
+<h2>Converting Arrays to Strings</h2>
+<p>The join() method joins array elements into a string.</p>
+<p id="converting_17"></p>
+<p id="converting_17_1"></p>
+<p id="converting_17_2"></p>
+<p id="converting_17_3"></p>
+
+<h2>Popping = pop()</h2>
+<p>The pop() method removes the last element from an array.</p>
+<p id="pop_17_4"></p>
+<p id="pop_17_5"></p>
+<p id="pop_17_6"></p>
+
+<h2>Pushing= push()</h2>
+
+<p>The push() method appends a new element to an array.</p>
+<p id="push_17_7"></p>
+
+<button onclick="pushMethods()">Click Me</button>
+<p id="push_17_8"></p>
+
+<button onclick="pushMethods_2()">Click Me</button>
+<p id="push_17_9"></p>
+
+<h2>Shifting Elements</h2>
+<p>Shifting is equivalent to popping, working on the first element instead of the last.<br>
+The shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+<button onclick="shifTing()">Click Me</button>
+<p id="shift_17_10"></p>
+
+<button onclick="shifTing_1()">Click Me</button>
+<p id="shift_17_11"></p>
+
+<h2>unshift()</h2>
+<p>The unshift() method adds new elements to the beginning of an array.</p>
+<button onclick="UNshifTing_1()">Click Me</button>
+<p id="unshift_17_12"></p>
+
+<h2>Delete Methods</h2>
+<p>Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:</p>
+<p>Deleting elements leaves undefined holes in an array.</p>
+<button onclick="deletedMethods()">Click Me</button>
+<p id="delete_17_13"></p>
+
+<h2>Splicing an Array</h2>
+<p>The splice() method can be used to add new items to an array:</p>
+<p>The splice() method adds new elements to an array.</p>
+<button onclick="splice_array()">Click Me</button>
+<p id="spLice_17_14"></p>
+<p id="spLice_17_15"></p>
+
+<h2>Using splice() to Remove Elements</h2>
+<button onclick="spliceRemove()">Click Me</button>
+<p id="splice_17_16"></p>
+
+<h2>Merging (Concatenating) Arrays</h2>
+<p>The concat() method creates a new array by merging (concatenating) existing arrays:</p><p>The concat() method is used to merge (concatenate) arrays:</p>
+<p id="concat_Arrays_17_17"></p>
+
+<p id="concat_Arrays_17_18"></p>
+
+<h2>Slicing an Array</h2>
+<p>When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:</p>
+<p id="slice_array_17_19"></p>
+
+<p id="slice_array_17_20"></p>
+
+<h1>P-18</h1>
+<h2>JavaScript Sorting Arrays</h2>
+<p>The sort() method sorts an array alphabetically.</p>
+<button onclick="srot_arrays()">Click Me</button>
+<p id="sort_18"></p>
+
+<button onclick="srot_arrays_1()">Click Me</button>
+<p id="sort_19"></p>
+
+<h2>Reversing an Array</h2>
+<p>The reverse() method reverses the elements in an array.</p>
+<p>By combining sort() and reverse() you can sort an array in descending order.</p>
+<button onclick="rvAr()">Hey Click Me</button>
+<p id="rvarray_19_1"></p>
+
+<h2>Numeric Sort</h2>
+<p>Click the button to sort the array in ascending order.</p>
+<button onclick="nuMariC()">Click Me</button>
+<p id="numeric_19_2"></p>
+
+<p>Or</p>
+<button onclick="nuMariC_2()">Click Me</button>
+<p id="numeric_19_3"></p>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+<button onclick="apcNurc1()">Sort Numerically</button><button onclick="apcNurc2()">Sort Alphabetically</button>
+<p id="sapNrc_19_4"></p>
+
+<h2>Sorting an Array in Random Order</h2>
+<p>Click the button (again and again) to sort the array in random order.</p>
+<button onclick="arRanoom()">Click Me Again and Again</button>
+<p id="sapNrc_19_5"></p>
+
+<h2>Find the Highest (or Lowest) Array Value</h2>
+<button onclick="hL0()">All</button>
+<button onclick="hL1()">Lowest Number</button>
+<button onclick="hL2()">Highest Number</button>
+<p>The Number is: <span id="hL_19_6"></span></p>
+
+<h2>Using Math.max() on an Array</h2>
+<p>You can use Math.max.apply to find the highest number in an array:</p>
+<button onclick="Array_math_Max()">Click Me</button>
+<p> <span id="math_max_19_7"></span></p>
+
+<h2>Using Math.min() on an Array</h2>
+<p>You can use Math.min.apply to find the lowest number in an array:</p>
+<button onclick="Array_math_Min()">Click Me</button>
+<p> <span id="math_min_19_8"></span></p>
+
+<!--======-P-20-==========-->
+<h1>P-20</h1>
+<h2>JS Array Iteration</h2>
+<h2>Array.forEach()</h2>
+<p>The forEach() method calls a function (a callback function) once for each array element.</p>
+<p>Calls a function once for each array element.</p>
+<p id="for_Each_20"></p>
+
+<h2>Array.map()</h2>
+<p>Creates a new array by performing a function on each array element.</p>
+
+<button onclick="map_Arrays()">Click me</button>
+<p>Value, Index, Array is : <span id="map_20_1"></span></p>
+
+<button onclick="map_Arrays_2()">Click me</button>
+<p>Only value is : <span id="map_20_2"></span></p>
+
+<h2>Array.filter()</h2>
+<p>Creates a new array with all array elements that passes a test.</p>
+<button onclick="filter_Arrays()">Click me</button>
+<p id="filter_20_1"></p>
+
+<button onclick="filter_Arrays_2()">Click Me</button>
+<p id="filter_20_2"></p>
+
+<h2>Array.reduce()</h2>
+<p>This example finds the sum of all numbers in an array:</p>
+<button onclick="reduce_Array()">Click Here</button>
+<p id="reduce_array_20_3"></p>
+
+<button onclick="reduce_Array_2()">Click Here</button>
+<p id="reduce_array_20_4"></p>
+
+<button onclick="reduce_Array_3()">Click Here</button>
+<p id="reduce_array_20_5"></p>
+
+<!---=====Date()===--->
+<h1>P-21</h1>
+<h2>Date()</h2>
+<p>6 numbers specify year, month, day, hour, minute and second:</p>
+<p id="date_21"></p>
+
+<p>A Date object can be created with a specified date and time:</p>
+<p id="date_21_2"></p>
+
+<p>100000000000 milliseconds from Jan 1, 1970, is approximately Oct 31, 1966:</p>
+<p id="date_21_3"></p>
+
+<p>100000000000 milliseconds from Jan 1, 1970, is approximately Mar 3, 1973:</p>
+<p id="date_21_4"></p>
+
+<p>The toDateString() method converts a date to a date string:</p>
+<p id="date_21_5"></p>
+
+<h2>getDay</h2>
+<p>The getDay() method returns the weekday as a number:</p>
+<p>You can use an array to display the name of the weekday:</p>
+<p id="date_21_6"></p>
+
+<h2>setDate</h2>
+<p>The setDate() method sets the day of a date object:</p>
+<p id="date_21_7"></p>
+
+<h2>Compare Dates</h2>
+<p>Dates can easily be compared.</p>
+<p id="date_21_8"></p>
+
+<!----====Math Object===--->
+<h1>P-22</h1>
+<h2>Math Object</h2>
+<p>The JavaScript Math object allows you to perform mathematical tasks on numbers.</p>
+
+<h2>Math.PI</h2>
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+<p id="maath_object_22"></p>
+
+<h2>Math.round()</h2>
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+<p id="maath_object_22_2"></p>
+
+<h2>Math.pow()</h2>
+<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+<p id="maath_object_22_3"></p>
+
+<h2>Math.sqrt()</h2>
+<p>Math.sqrt(x) returns the square root of x:</p>
+<p id="maath_object_22_4"></p>
+
+<h2>Math.abs()</h2>
+<p>Math.abs(x) returns the absolute (positive) value of x:</p>
+<p id="maath_object_22_5"></p>
+
+<h2>Math.min()</h2>
+<p>Math.min() returns the lowest value in a list of arguments:</p>
+<p id="maath_object_22_6"></p>
+
+<h2>Math.max()</h2>
+<p>Math.max() returns the highest value in a list of arguments.</p>
+<p id="maath_object_22_7"></p>
+
+<!---=========End JS Math=======--->
+
+<!---=======Start JS Random======= --->
+<!----P-23------>
+<h1>P-23</h1>
+<h2>JavaScript Booleans</h2>
+<h3>The Boolean() Function</h3>
+<p>Display the value of Boolean(10 > 9):</p>
+<button onclick="boole_Ans()">Click Me</button>
+<p id="boolean_23"></p>
+
+<p>Display the value of Boolean(10 < 9):</p>
+<button onclick="boole_Ans_2()">Click Me</button>
+<p id="boolean_23_2"></p>
+
+<h2>Everything Without a "Value" is False</h2>
+<p>Display the Boolean value of 0:</p>
+<button onclick="boole_Ans_3()">Click Me</button>
+<p id="boolean_23_3"></p>
+
+<p>Display the Boolean value of -0:</p>
+<button onclick="boolean_Ans_4()">Click me</button>
+<p id="boolean_23_4"></p>
+
+<p>Display the Boolean value of "":</p>
+<button onclick="boolean_Ans_5()">click Me</button>
+<p id="boolean_23_5"></p>
+
+<!---=======End JS Random======= --->
+
+<!--P-24--==JavaScript Comparison and Logical Operators===--->
+<h1>P-24</h1>
+<h2>JavaScript Comparison and Logical Operators</h2>
+<!---Comparison Operators--->
+<h3>Comparison Operators</h3>
+<p>Assign 10 to x, and display the value of the comparison (x == 10):</p>
+<p id="cOp_24"></p>
+
+<p>Assign 5 to x, and display the value of the comparison (x !== 5):</p>
+<p id="cOp_24_2"></p>
+
+<p>Assign 5 to x, and display the value of the comparison (x != 8).</p>
+<p id="cOp_24_3"></p>
+
+<p>Assign 15 to x, and display the value of the comparison (x <= 20).</p>
+<p id="cOp_24_4"></p>
+
+<p>Assign 15 to x, and display the value of the comparison (x >= 20).</p>
+<p id="cOp_24_5"></p>
+
+<h2>How Can comparison be Used </h2>
+<p>age > 20</p>
+<p id="cOp_24_6"></p>
+
+<p>Input your age and click the button:</p>
+<input id="age" value="18" />
+<button onclick="comPariSon()">Click Me</button>
+<p id="cOp_24_7"></p>
+<!----==/JavaScript Comparison and Logical Operators===--->
+
+<!---====JavaScript if else and else if==--->
+<h1>P-25</h1>
+<h2>if else and else if</h2>
+<p>Display "Good day!" if the hour is <i style="color:red;"><b>less than</b></i> 18:00:</p>
+<p id="if_else_25">Good Evening!</p>
+
+<p>Display "Good Evening!" if the hour is <i style="color:red;"><b>Greater than</b></i> 18:00:</p>
+<p id="if_else_25_2">Good Evening!</p>
+
+<p>If the hour is <i style="color:red;"><b>less than</b></i> 18, create a "Good Position" greeting, otherwise "Bad Position":</p>
+<p>Click the button to display a time-based greeting:</p>
+<button onclick="if_Else()">Click me</button>
+<p id="if_else_25_3"></p>
+
+<p>If the hour is <i style="color:red;"><b>Greater than</b></i> 18, create a "Good Position" greeting, otherwise "Bad Position":</p>
+<p>Click the button to display a time-based greeting:</p>
+<button onclick="if_Else_2()">Click me</button>
+<p id="if_else_25_4"></p>
+
+<h2>The else if Statement</h2>
+<p>Click the button to get a time-based greeting:</p>
+<p>Use the <span style="color:red;">else if</span> statement to specify a new condition if the first condition is false.</p>
+<button onclick="if_Else_3()">Click and Try It</button>
+<p id="if_else_25_5"></p>
+
+<h2>Or</h2>
+<p>Use the <span style="color:red;">else if</span> statement to specify a new condition if the first condition is false.</p>
+<button onclick="if_Else_4()">Click and Try It</button>
+<p id="if_else_25_6"></p>
+<!---====/JavaScript if else and else if==--->
+<!-- The JavaScript Switch Statement -->
+<h1>P-26</h1>
+<h2>The JavaScript Switch Statement</h2>
+<p>The switch statement is used to perform different actions based on different conditions.</p>
+<button onclick="sWiTch_1()">See the Day</button>
+<p id="sWitch_26"></p>
+<!-- /The JavaScript Switch Statement -->
+<!-- JavaScript For Loop -->
+<h1>P-27</h1>
+<h2>JavaScript For Loop</h2>
+<p>Loops are handy, if you want to run the same code over and over again, each time with a different value.
+<br>
+Often this is the case when working with arrays:</p>
+<p id="for_loop_27"></p>
+
+<h2>Or</h2>
+<p id="for_loop_27_2"></p>
+
+<h2>Or</h2>
+<p id="for_loop_27_3"></p>
+
+<h2>Or</h2>
+<p id="for_loop_27_4"></p>
+<!-- /JavaScript For Loop -->
+
+<!-- JavaScript For/Of Loop -->
+<h2>JavaScript For/Of Loop</h2>
+<p>The for/of statement loops through the values of an iterable object.</p>
+<script>
+var nName = ["Rubel", "shahin", "Shadik"];
+var x;
+for (x of nName){
+	document.write(x+"<br>");
+}
+document.write("The <span style=color:red;>for/of</span> statement loops through the values of an iterable object.")
+
+var a = "Atiqur";
+var b;
+for (b of a){
+	document.write(b+"<br>");
+}
+</script>
+<!---- /JavaScript For/Of Loop -->
+<!-- JavaScript While Loop -->
+<h1>P-28</h1>
+<h2>JavaScript While Loop</h2>
+<p>Loops can execute a block of code as long as a specified condition is true.</p>
+<p id="while_28"></p>
+<!-- /JavaScript While Loop -->
+
+<!-- JavaScript Do/While Loop -->
+<h2>JavaScript Do/While Loop</h2>
+<p id="do_while_28_2"></p>
+
+<!-- /JavaScript Do/While Loop  -->
+
+<!-- JavaScript Break and Continue -->
+<h1>P-29</h1>
+<h2>JavaScript Break and Continue</h2>
+<p>A loop with a <b>break</b> statement.</p>
+<p id="break_29"></p>
+
+<p>A loop with a <b>continue</b> statement.</p>
+<p id="break_29_2"></p>
+
+<!-- JavaScript Labels -->
+<h2>Labels</h2>
+<p id="lables_29_3"></p>
+<!-- /JavaScript Break and Continue -->
+
+<!-- JavaScript Errors - Throw and Try to Catch -->
+<h1>P-30</h1>
+<h2>JavaScript Errors - Throw and Try to Catch</h2>
+
+
+<h2>Input Validation Example</h2>
+<p>Please input a number between 18 and 18:</p>
+<input id="ivE" type="text">
+<button type="button" onclick="eRRo_vali()">click me</button>
+<p id="eRRors_30"></p>
+
+<h2>Or</h2>
+
+<h2>The finally Statement</h2>
+<p>Please input a number between 25 and 18:</p>
+<input id="EfS" type="text">
+<button type="button" onclick="eRro_valifS()">click me</button>
+<p id="eRRors_30_2"></p>
+<!-- ==/JavaScript Errors - Throw and Try to Catch -->
+
+<!-- ====The JavaScript this Keyword -->
+<h1>P-31</h1>
+<h2>The JavaScript <span style= color:red;>this</span> Keyword</h2>
+<p>In this example, <b>this</b> represents the <b>person</b> object.</p>
+<p>Because the person object "owns" the fullName method.</p>
+<p id="tHis_31"></p>
+<h2><span style="color: red;">this</span> in Event Handlers</h2>
+<p>In HTML evsent handlers, this refers to the HTML element that received the event:</p>
+<h2>The JavaScript <i>this</i> Keyword</h2>
+<button onclick="this.style.display='none'">Click to Remove Me!</button>
+
+
+<h2>The JavaScript <i>this</i> Keyword</h2>
+<p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+<p id="tHis_31_2"></p>
+<!-- /The JavaScript this Keyword -->
+<!-- ======JavaScript Let -->
+<h1>P-32</h1>
+<h2>JavaScript Let</h2>
+<h2>Declaring a Variable Using var</h2>
+<p id="let_32"></p>
+
+<h2>Declaring a Variable Using let</h2>
+<p id="let_32_2"></p>
+
+<h2>Loop Scope</h2>
+<p>Using var in a loop:</p>
+<p id="let_32_3"></p>
+
+<h2>Using <i style="color:red;">let</i> in a loop:</h2>
+<p id="let_32_4"></p>
+<!-- ============/JavaScript Let -->
+
+<!-- ======JavaScript Const -->
+<h1>P-33</h1>
+<h2>JavaScript Const</h2>
+<h2>Constant Arrays can Change</h2>
+<p>Declaring a constant array does NOT make the elements unchangeble:</p>
+<p id="const_33"></p>
+<!-- ==============/JavaScript Const -->
+
+<!-- =========Arrow Function======= -->
+<h1>P-34</h1>
+<h2>Arrow Function</h2>
+<p>This example shows the syntax of a function, without the use of arrow function syntax.</p>
+<h3 style="color:red;">Before:</h3>
+<p id="arF_34"></p>
+
+<p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+<h3 style="color:red;">With Arrow Function:</h3>
+<p id="arF_34_1"></p>
+
+<p>This example shows an Arrow Function <i style="color: red;">without the brackets</i> or the return keyword.</p>
+<p id="arF_34_2"></p>
+
+<p>This example shows an Arrow Function <i style="color: red;">with a parameter.</i></p>
+<p id="arF_34_3"></p>
+<!-- =======/Arrow Function======== -->
+
+<!-- ========JavaScript Form Validation=== -->
+<h1>P-35</h1>
+<h2>JS Forms</h2>
+<h3>JavaScript Form Validation</h3>
+<form name="jsw3Form" action="form.html" onsubmit="return ValidationForm()" method="post">
+	Name: <input type="text" name="fname_form">
+	<input type="text" name="lname_form">
+	 <input type="submit" value="Submit">
+</form>
+
+<!-- ======JavaScript Can Validate Numeric Input======= -->
+<h2>JavaScript Can Validate Input // Numeric Inpu</h2>
+<p>Please input a number between 1 and 10:</p>
+<input id="nuMber">
+<button type="button" onclick="vdIput()">Submit</button>
+<p id="form_35_2"></p>
+
+<!-- Automatic HTML Form Validation -->
+<h2>Automatic HTML Form Validation</h2>
+<p>If you click submit, without filling out the text field,
+your browser will display an error message.</p>
+<form action="form.html" method="post">
+	<input type="text" name="fname" required>
+	<input type="submit" value="Submit">
+</form>
+
+<!-- avaScript Validation API ==The checkValidity() Method-->
+<h2>avaScript Validation API</h2>
+<h3>The checkValidity() Method</h3>
+<p>Enter a number and click OK:</p>
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+<input id="atiq_vdapi" type="number" min="100" max="300" required>
+<button onclick="vDatapi()">OK</button>
+<p id="form_35_3"></p>
+     <!-- The rangeOverflow Property -->
+     <!-- Validity Properties -->
+     <img src="/Atiq/JSW3/img/vdproperties.JPG" alt="Img Link">
+<h2>The rangeOverflow Property</h2>
+<p>Enter a number and click OK:</p>
+<p>If the number is greater than 100 (the input's max attribute), an error message will be displayed.</p>
+<input id="atiq_vdapi_2" type="number" max="100">
+<button onclick="vDatapi_2()">OK</button>
+<p id="form_35_4"></p>
+	<!-- The rangeUnderflow Property -->
+<h2>The rangeUnderflow Property</h2>
+<p>Enter a number and click OK:</p>
+<p>If the number is less than 100 (the input's min attribute), an error message will be displayed.</p>
+<input id="atiq_vdapi_3" type="number" min="100">
+<button onclick="vDatapi_3()">OK</button>
+<p id="form_35_5"></p>
+<!-- =======/JavaScript Form Validation======== -->
+<!-- =======JavaScript Objects -->
+<!-- ========JavaScript Object Properties======= -->
+<!-- =======JavaScript for...in Loop========= -->
+<h1>P-36</h1>
+<h2>avaScript Object Properties</h2>
+<h3>JavaScript for...in Loop</h3>
+<p id="obJect_36"></p>
+
+<h2>Adding New Properties</h2>
+<p>You can add new properties to existing objects.</p>
+<p id="obJect_36_2"></p>
+
+<!-- =====Deleting Properties= -->
+<h2>Deleting Properties</h2>
+<p>You can delete object properties.</p>
+<p id="obJect_36_3"></p>
+ <!-- =========JavaScript Object Methods===== -->
+ <h2>JavaScript Object Methods</h2>
+<p id="obJect_36_4"></p>
+<h2>Or</h2>
+<p id="obJect_36_5"></p>
+<!-- =======JavaScript Object Accessors======== -->
+<h2>JavaScript Object Accessors</h2>
+<h3>JavaScript Accessors (Getters and Setters)</h3>
+<h3>JavaScript Getter (The get Keyword)</h3>
+<p>Getters and setters allow you to get and set properties via methods.</p>
+<p>This example uses a lang property to get the value of the language property.</p>
+<p id="obJect_36_6"></p>
+
+<!-- ===JavaScript Setter (The set Keyword)== -->
+<h2>JavaScript Setter (The set Keyword)</h2>
+<p>Getters and setters allow you to get and set properties via methods.</p>
+<p>This example uses a lang property to set the value of the language property.</p>
+<p id="obJect_36_7"></p>
+
+<h2>Data Quality</h2>
+<p>Getters and setters allow you to get and set properties via methods.</p>
+<h4 style="color: red;">property in upper case:</h4>
+<p id="obJect_36_8"></p>
+
+<h2>JavaScript Object Constructors</h2>
+<p id="obJect_36_9"></p>
+<h2>Or</h2>
+<h3>Object Types (Blueprints) (Classes)</h3>
+<p id="obJect_36_10"></p>
+
+<h3>Adding a Method to an Object</h3>
+<p id="obJect_36_11"></p>
+
+	<!-- ==Built-in JavaScript Constructors== -->
+<h2>Built-in JavaScript Constructors</h2>
+<p id="obJect_36_12"></p>
+			<!-- ==Object.defineProperty()== -->
+<h2>JavaScript Object.defineProperty()</h2>
+<p>This example adds a new property to an object.</p>
+<p id="obJect_36_13"></p>
+
+<!-- ======/JavaScript Objects -->
+
+<!-- =======JavaScript Function Definitions=========== -->
+<div class="js_functions_item">
+	<h1>P-37</h1>
+	<h2>JavaScript Function Definitions</h2>
+
+	<h2>Function Declarations</h2>
+	<p>Earlier in this tutorial, you learned that functions are declared with the following syntax:</p>
+	<p id="function_37" style="border: 1px solid blue; padding: 5px;"></p>
+
+	<p style="color:green;">This example calls a function which performs a calculation and returns the result:</p>
+	<p id="function_37_2"></p>
+	<!-- ======= -->
+
+	<p style="color: blue;">After a function has been stored in a variable,
+	the variable can be used as a function:</p>
+	<i id="function_37_3" style="color: red;"></i>
+
+	<!-- =========== -->
+	<p style="color: gray;">JavaScript has an built-in function constructor.</p>
+	<p id="function_37_4" style="border: 2px solid red; width: 25px;"></p>
+
+	<h2>arguments.length</h2>
+	<p>The arguments.length property returns the number of arguments received by the function:</p>
+	<p style="color: red;" id="function_37_5"></p>
+
+	<!-- ============ -->
+	<h2>JavaScript Arrow Functions</h2>
+	<p>With arrow functions, you don't have to type the function keyword, the return keyword, and the curly brackets.</p>
+	<p>Arrow functions are not supported in IE11 or earlier.</p>
+	<p style="color: blue;" id="function_37_6"></p>
+	<h3>Or</h3>
+	<p style="color: red;" id="function_37_7"></p>
+
+		<!-- ===JavaScript Function Parameters== -->
+	<h2>JavaScript Function Parameters</h2>
+	<h3>Function Parameters and Arguments</h3>
+	<p>Earlier in this tutorial, you learned that functions can have parameters:</p>
+	<p id="function_37_8"></p>
+
+	<!-- ======== -->
+	<p>Setting a default value to a function parameter.</p>
+	<p id="function_37_9"></p>
+
+	 <!-- ===The Arguments Object== -->
+	<h2>The Arguments Object</h2>
+	<p>Finding the largest number.</p>
+	<p id="function_37_10"></p>
+
+		<!-- ======Sum of all arguments====== -->
+
+	<p>Sum of all arguments:</p>
+	<p style="color: blue;" id="function_37_11"></p>
+
+		<!-- ===JavaScript Function Call== -->
+	<h2>JavaScript Function Call</h2>
+	<p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+	<p>The fullName property is a method:</p> 
+	<p style="color:red;" id="function_37_12"></p>
+
+	<h2>The JavaScript call() Method</h2>
+	<p>This example calls the fullName method of x, using it on b:
+	</p>
+	<p style="color: gray;" id="function_37_13"></p>
+
+		<!-- ==The call() Method with Arguments== -->
+	<h2>The call() Method with Arguments</h2>
+	<p style="color: blue;" id="function_37_14"></p>
+	    <!-- ==JavaScript Function Apply== -->
+	<h2>JavaScript Function Apply</h2>
+	<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+	<p style="color: blue;" id="function_37_15"></p>
+
+	<!-- ==The apply() Method with Arguments== -->
+	<h2>The apply() Method with Arguments</h2>
+	<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+	<p style="color: green;" id="function_37_16"></p>
+		<!-- ==Compared with the call() method:=== -->
+	<h3 style="color: gray;">Compared with the call() method:</h3>
+	<p>This example calls the fullName method of person, using it on person1:
+	</p>
+	<p style="color: red;" id="function_37_17"></p>
+	<!-- ===JavaScript Closures============ -->
+	      <!-- ==Global Variables== -->
+
+	<h2>JavaScript Function Closures</h2>
+	<h3>Global Variables</h3>
+	<p>A function can access variables defined inside the function:</p>
+	<button onclick="GloBal_1()">click</button>
+	<p style="color: blue;" id="function_37_18"></p>
+
+	<h3 style="color: red;">But</h3>
+	<p>But a function can also access variables defined outside the function, like this:</p>
+	<p>A function can access variables defined outside the function:</p>
+	<button type="button" onclick="func_GlobAl()">click me</button>
+	<p style="color: green;" id="function_37_19"></p>
+
+		<!-- ==A Counter Dilemma== -->
+
+	<h3>A Counter Dilemma</h3>
+	<p>Counting with a global variable.</p>
+	<p style="color: green;" id="function_37_20"></p>
+	
+	<!-- ==Counting with a local variable.== -->
+	<p style="color:yellow">Counting with a local variable.</p>
+	<button type="button" onclick="func_GloBal_2()">click me</button>
+	<p id="function_37_21">0</p>
+
+	<!-- ==JavaScript Nested Functions== -->
+	<h3>JavaScript Nested Functions</h3>
+	<p>Counting with a local variable.</p>
+	<p id="function_37_22">0</p>
+
+	<!-- ==JavaScript Closures== -->
+	<h3>JavaScript Closures</h3>
+	<p>Counting with a local variable.</p>
+	<button type="button" onclick="fun_closures()">Count! click</button>
+	<p id="function_37_23">0</p>
+
+	<h2>End JS Functions</h2>
+	
+</div> <!-- /.js_functions_item -->
+<!-- ===============/.JavaScript Function Definitions============ -->
+
+
+
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+<!--======== simple Animation =====-->
+<h2>simple Animation</h2>
+<p class="amar_Animate"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<h2>Others Animation</h2>
+<p class="others_Animate"></p>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<h2>animation-fill-mode: forwards</h2>
+<p class="others_Animate_2"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<!-- /simple Animation -->
+
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<p id="slideShow"></p>
+	<br>
+	<br>
+	<img src="/Atiq/JSW3/img/---.JPG" alt="Img Link">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div> <!-- /container -->
+
+	<script type="text/javascript" src="/Atiq/JSW3/w3main.js"></script>
+</body>
+</html>

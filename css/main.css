@@ -1,0 +1,160 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	background-color: black;
+	font-family: 'PT Serif', serif;
+	color: #fff;
+
+}
+/* ====== common css ======*/
+.container{
+	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container:before,
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.col100{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col50{
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col33{
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col25{
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+button:hover{
+	background-color: black;
+	color: #ffff;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 10%;
+	transition: 1s;
+	
+}
+button{
+	animation-name: exeample;
+	animation-duration: 2s;
+}
+@keyframes exeample{
+	from {background-color: red;}
+	to {background-color: green;}
+}
+/*End common Css*/
+.slideShow img{
+	width: 1100px;
+}
+/*Simple animation*/
+.amar_Animate{
+	width: 100px;
+	height: 100px;
+	border: 0px solid;
+	background-color: red;
+	position: relative;
+	-wibkit-animation-name:ourAnimation;
+	-wibkit-animation-duration:4s;
+	animation-name:ourAnimation;
+	animation-duration:4s;
+	/*animation-iteration-count: 5;*/
+	/*/*animation-direction: reverse;*//*(note: revers and alternate same work)*/
+	/*animation-direction: alternate;*/
+	/*animation-direction: alternate-reverse;*/
+	animation-iteration-count: infinite;
+
+}
+       /* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes ourAnimation{
+	0% {background-color: red; left: 0px; top: 0px;}
+	25% {background-color: yellow; left: 200px; top: 0px;}
+	50% {background-color: green; left: 200px; top: 200px;}
+	75% {background-color: blue; left: 0px; top: 200px;}
+	100% {background-color: red; left: 0px; top: 0px;}
+}
+       /* Standard syntax */
+@keyframes ourAnimation{
+	0% {background-color: red; left: 0px; top: 0px;}
+	25% {background-color: yellow; left: 200px; top: 0px;}
+	50% {background-color: green; left: 200px; top: 200px;}
+	75% {background-color: blue; left: 0px; top: 200px;}
+	100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/*========
+js_functions_item
+============*/
+.js_functions_item{
+	width: 100%;
+	height: 3250px;
+	padding-left: 20px;
+	border: 2px solid red;
+	margin-bottom: 20px;
+}
+
+
+/* Others Animation*/
+.others_Animate{
+	width: 100px;
+	height: 100px;
+	border: 0px solid;
+	background-color: red;
+	position: relative;
+	-wibkit-animation-name:othersAnimation;
+	-wibkit-animation-duration:8s;
+	animation-name:othersAnimation;
+	animation-duration:8s;
+
+}
+@keyframes othersAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  20%  {background-color:yellow; left:100px; top:0px;}
+  40%  {background-color:blue; left:100px; top:100px;}
+  60%  {background-color:green; left:0px; top:100px;}
+  80%  {background-color:black; left:0px; top:200px;}
+  100%  {background-color:red; left:100px; top:200px;}
+  
+}
+ /*Others Animation-2*/
+.others_Animate_2{
+	width: 100px;
+	height: 100px;
+	border: 0px solid;
+	background-color: red;
+	position: relative;
+	animation-name:ourAnimation_two;
+	animation-duration:4s;
+	animation-fill-mode: forwards;
+}
+@keyframes ourAnimation_two {
+  0% {background-color:blue; top: 0px;}
+  50% {background-color:red; top: 150px;}
+  100% {background-color:green; top: 50px;}
+}
+
+/*  /Simple animation*/
+
+
+
